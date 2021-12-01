@@ -1,5 +1,9 @@
 window.addEventListener('load', function() {
 
+  const queries = window.location.search
+  console.log("aaaaaaaaaaaaaa");
+  console.log(queries);
+
   var config = JSON.parse(
     decodeURIComponent(escape(window.atob('@@config@@')))
   );
