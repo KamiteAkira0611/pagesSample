@@ -1,11 +1,13 @@
 window.addEventListener('load', function() {
 
+  console.log('start');
   const queries = window.location.search
-  console.log("aaaaaaaaaaaaaa");
-  console.log(queries);
+  console.log('query', queries);
+  const authConfig = queries.split('authConfig=')[1]
+  console.log('authConfig', authConfig);
 
   var config = JSON.parse(
-    decodeURIComponent(escape(window.atob('@@config@@')))
+    decodeURIComponent(escape(window.atob(authConfig)))
   );
 
   var leeway = config.internalOptions.leeway;
