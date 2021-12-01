@@ -1,10 +1,7 @@
 window.addEventListener('load', function() {
 
-  console.log('start');
   const queries = window.location.search
-  console.log('query', queries);
   const authConfig = queries.split('authConfig=')[1]
-  console.log('authConfig', authConfig);
 
   var config = JSON.parse(
     decodeURIComponent(escape(window.atob(authConfig)))
@@ -101,7 +98,7 @@ window.addEventListener('load', function() {
     errorMessage.style.display = 'block';
   }
 
-  document.getElementById('btn-login').addEventListener('click', login);
+  // document.getElementById('btn-login').addEventListener('click', login);
   document.getElementById('btn-google').addEventListener('click', loginWithGoogle);
   document.getElementById('btn-twitter').addEventListener('click', loginWithTwitter);
   document.getElementById('btn-facebook').addEventListener('click', loginWithFacebook);
