@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang='ja'>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Sign In with Auth0</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,200,300,400,500,600,700,800,900&amp;subset=japanese" rel="stylesheet">
+  <link rel='stylesheet' href='./styles/style.css'>
+</head>
+<body>
+  <div class="auth_card">
+    
+    <h1>世界のショート映画を<br>SAMANSAで</h1>
+    <p>
+      クレジットカード登録不要。<br>
+      2週間トライアル付き(以降月額250円)。<br>
+      ※トライアル終了後は自動課金ではありません<br>
+      SAMANSAでしか観られない作品多数。
+    </p>
+
+    <input type="email" id="email" type="text" placeholder="Eメール">
+    <input type="password" id="password" type="text" placeholder="パスワード">
+    <button type="submit">認証メールを送信</button>
+
+    <div class="or">または</div>
+    
+    <button
+      type="button"
+      class="sns_btn"
+      id="btn-facebook"
+    >
+      Facebookでサインアップ
+    </button>
+    <button
+      type="button"
+      class="sns_btn"
+      id="btn-twitter"
+    >
+      Twitterでサインアップ
+    </button>
+    <button
+      type="button"
+      class="sns_btn"
+      id="btn-google"
+    >
+      Googleでサインアップ
+    </button>
+
+  </div>
+
+
+  <script src="https://cdn.auth0.com/js/auth0/9.16/auth0.min.js"></script>
+  <script src="https://cdn.auth0.com/js/polyfills/1.0/object-assign.min.js"></script>
+  <script src="./scripts.js"></script>
+</body>
+</html>
