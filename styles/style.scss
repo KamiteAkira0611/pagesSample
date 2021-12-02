@@ -78,4 +78,28 @@ body{
     font-size: 14px;
   }
 
+  .change {
+    color: #A6A6A6;
+    font-size: 14px;
+    margin-top: 23px;
+    text-align: left;
+    a{
+      color: #D2DB45;
+      text-decoration: none;
+    }
+  }
+
+  /*------------------------------
+    ■ LOGIN
+  -------------------------------*/
+  #login{
+    h1{
+      text-align: left;
+      margin-bottom: 10px;
+    }
+    .change{
+      margin-top: 51px;
+    }
+  }
+
 }

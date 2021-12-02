@@ -11,45 +11,85 @@
 </head>
 <body>
   <div class="auth_card">
-    
-    <h1>世界のショート映画を<br>SAMANSAで</h1>
-    <p>
-      クレジットカード登録不要。<br>
-      2週間トライアル付き(以降月額250円)。<br>
-      ※トライアル終了後は自動課金ではありません<br>
-      SAMANSAでしか観られない作品多数。
-    </p>
 
-    <input type="email" id="email" type="text" placeholder="Eメール">
-    <input type="password" id="password" type="text" placeholder="パスワード">
-    <button type="submit" id="btn-signup">認証メールを送信</button>
+    <div id="signup">
+      <h1>世界のショート映画を<br>SAMANSAで</h1>
+      <p>
+        クレジットカード登録不要。<br>
+        2週間トライアル付き(以降月額250円)。<br>
+        ※トライアル終了後は自動課金ではありません<br>
+        SAMANSAでしか観られない作品多数。
+      </p>
 
-    <div class="or">または</div>
-    
-    <button
-      type="button"
-      class="sns_btn"
-      id="btn-facebook"
-    >
-      Facebookでサインアップ
-    </button>
-    <button
-      type="button"
-      class="sns_btn"
-      id="btn-twitter"
-    >
-      Twitterでサインアップ
-    </button>
-    <button
-      type="button"
-      class="sns_btn"
-      id="btn-google"
-    >
-      Googleでサインアップ
-    </button>
+      <input type="email" id="email" type="text" placeholder="Eメール">
+      <input type="password" id="password" type="text" placeholder="パスワード">
+      <button type="submit" id="btn-signup">認証メールを送信</button>
+
+      <div class="or">または</div>
+      
+      <button
+        type="button"
+        class="sns_btn"
+        id="btn-facebook"
+      >
+        Facebookでサインアップ
+      </button>
+      <button
+        type="button"
+        class="sns_btn"
+        id="btn-twitter"
+      >
+        Twitterでサインアップ
+      </button>
+      <button
+        type="button"
+        class="sns_btn"
+        id="btn-google"
+      >
+        Googleでサインアップ
+      </button>
+
+      <div class="change">ログインは<a href="#login" id="btn-login-here">こちら</a></div>
+    </div>
+
+
+    <div id="login">
+      <h1>ログイン</h1>
+      <input type="email" id="email" type="text" placeholder="Eメール">
+      <input type="password" id="password" type="text" placeholder="パスワード">
+      <button type="submit" id="btn-signup">ログイン</button>
+
+      <div class="or">または</div>
+      <button
+        type="button"
+        class="sns_btn"
+        id="btn-facebook"
+      >
+        Facebookでログイン
+      </button>
+      <button
+        type="button"
+        class="sns_btn"
+        id="btn-twitter"
+      >
+        Twitterでログイン
+      </button>
+      <button
+        type="button"
+        class="sns_btn"
+        id="btn-google"
+      >
+        Googleでログイン
+      </button>
+
+      <div class="change">
+        アカウントを持っていない方<br>
+        <a href="#login" id="btn-signup-here">二週間の無料トライアルに登録</a>
+      </div>
+    </div>
+
 
   </div>
-
   <script src="https://cdn.auth0.com/js/auth0/9.16/auth0.min.js"></script>
   <script src="https://cdn.auth0.com/js/polyfills/1.0/object-assign.min.js"></script>
   <script src="./scripts.js"></script>

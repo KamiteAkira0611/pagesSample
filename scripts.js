@@ -2,7 +2,7 @@ window.addEventListener('load', function() {
 
   const queries = window.location.search
   const authConfig = queries.split('authConfig=')[1]
-
+  
   var config = JSON.parse(
     decodeURIComponent(escape(window.atob(authConfig)))
   );
@@ -98,9 +98,32 @@ window.addEventListener('load', function() {
     errorMessage.style.display = 'block';
   }
 
+  // function displaySignup() {
+  //   document.getElementById('login').style.display = "none"
+  //   document.getElementById('signup').style.display = "none"
+  // }
+
   // document.getElementById('btn-login').addEventListener('click', login);
+  // document.getElementById('btn-login-here').addEventListener('click', displaySignup);
+  document.getElementById('btn-google').addEventListener('click', loginWithGoogle);
   document.getElementById('btn-google').addEventListener('click', loginWithGoogle);
   document.getElementById('btn-twitter').addEventListener('click', loginWithTwitter);
   document.getElementById('btn-facebook').addEventListener('click', loginWithFacebook);
   document.getElementById('btn-signup').addEventListener('click', signup);
 });
+
+window.addEventListener('DOMContentLoaded', function() {
+  displaySignup()
+
+  function displayLogin() {
+    document.getElementById('login').style.display = "block"
+    document.getElementById('signup').style.display = "none"
+  }
+  function displaySignup() {
+    document.getElementById('login').style.display = "none"
+    document.getElementById('signup').style.display = "block"
+  }
+
+  document.getElementById('btn-login-here').addEventListener('click', displayLogin);
+  document.getElementById('btn-signup-here').addEventListener('click', displaySignup);
+})
